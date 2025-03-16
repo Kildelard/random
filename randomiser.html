@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomise!</title>
+    <script>
+        window.onload = function() {
+            // Define possible URLs
+            const pages = [
+                "https://artfight.net/character/2100295.conrad",
+                "https://artfight.net/character/4174045.essmer",
+                "https://artfight.net/character/5693311.axel",
+                "https://artfight.net/character/5636501.ryonach"
+            ];
+            
+            // Pick a random page
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            
+            // Redirect the user
+            window.location.href = randomPage;
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
